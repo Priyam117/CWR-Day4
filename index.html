@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Day 4 classwork</title>
+</head>
+
+<body>
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+  <div id="root"></div>
+
+
+  <Script type="text/babel">
+
+    function Component() {
+      return (
+        <>
+          <header>
+            <div className="container">
+
+              <div className="left">
+                <ul className="ul">
+                  <li>Hootsuit</li>
+                  <li>Platforms</li>
+                  <li>Plans</li>
+                  <li>Enterprise</li>
+                  <li>Resource</li>
+                  <li>Education</li>
+                </ul>
+              </div>
+
+              <div className="right">
+                <ul className="ul">
+                  <li>Contact us</li>
+                  <li>Login </li>
+                  <button>Sign Up</button>
+                </ul>
+              </div>
+            </div>
+          </header>
+
+          <heroic className="hero">
+
+            <h1 className="h1-hero">See value from social sooner</h1>
+            <p className="p-hero">Our training and strategic services have helped<br></br>
+              thousands of organizations succeed on social</p>
+            <button className="btn-hero">Request a demo</button>
+
+          </heroic>
+
+          <card>
+            <div class="card-container">
+              <div class="box">
+                <img src="data:image/png;base64,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" class="img-class" alt="img" />
+
+                <h2>2500</h2>
+                <p>enterprise organizations successfully launched </p>
+              </div>
+              <div class="box">
+                <img src="data:image/png;base64,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" class="img-class" alt="img" />
+
+                <h2>45,000</h2>
+                <p>enterprise organizations successfully launched </p>
+              </div>
+
+              <div class="box">
+                <img src="data:image/png;base64,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" class="img-class" alt="img" />
+
+                <h2>200,000+</h2>
+                <p>enterprise organizations successfully launched </p>
+              </div>
+            </div>
+          </card>
+        </>
+
+      );
+    }
+
+
+
+    const container = document.getElementById('root');
+    const root = ReactDOM.createRoot(container);
+    root.render(<Component />);
+
+  </script>
+</body>
+
+</html>
